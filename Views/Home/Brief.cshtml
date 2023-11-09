@@ -1,0 +1,124 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --dark-green: #004d40;
+        --dark-yellow: #ffb300;
+        --white: #ffffff;
+    }
+
+    body {
+        font-family: 'Raleway', sans-serif;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    h1.display-4, h2 {
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    strong {
+        font-family: 'Cinzel', serif;
+    }
+
+    h2 {
+        border-bottom: 2px solid var(--dark-yellow);
+        display: inline-block;
+        padding-bottom: 10px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    h2:hover {
+        color: var(--dark-yellow);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    table th, table td {
+        padding: 10px 20px;
+        border-top: 1px solid var(--dark-yellow);
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    table tr:hover {
+        background-color: rgba(255, 179, 0, 0.1); /* Light yellow shade on hover */
+    }
+
+    ul.list-circle {
+        list-style-type: circle;
+        padding-left: 20px;
+    }
+
+    div.indented-text p {
+        text-indent: 40px;
+    }
+
+    a {
+        transition: color 0.3s ease-in-out;
+    }
+
+    a:hover {
+        color: white;
+    }
+</style>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">My Project Brief</h1>
+</div>
+
+<section>
+    <h2>Company Info</h2>
+    <table border="1">
+        <tr>
+            <th>Company/Business Name</th>
+            <td>PR Picks</td>
+        </tr>
+        <tr>
+            <th>Company Description</th>
+            <td>Your Ultimate Destination for Antique Clothing and Wearing Collections</td>
+        </tr>
+        <tr>
+            <th>Group Members and Roles</th>
+            <td>
+                <ul>
+                    <li>Front-end Developer - Rahi Patel</li>
+                    <li>Back-end Developer - Pranav Bhavsar</li>
+                    <li>Full Stack Developer - Khushi Patel</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <br>
+</section>
+
+<section>
+        <h2>Proposal for PRPicks</h2>
+        
+        <p><strong>Description of the Site:</strong></p>
+        <p>PRPicks is an exclusive online boutique specializing in antique clothing and timeless wearing collections. Our platform is dedicated to preserving the beauty of vintage fashion and making it accessible to fashion enthusiasts around the world. We curate a handpicked selection of exquisite antique garments, accessories, and jewelry, showcasing the elegance of bygone eras.</p>
+
+        <p><strong>Products and Services:</strong></p>
+        <p>PRPicks offers a wide range of antique clothing, including vintage dresses, suits, accessories, and one-of-a-kind jewelry pieces. In addition to selling these unique items, we provide valuable services such as fashion consultations, historical fashion insights, and restoration services to ensure our customers receive the finest antique fashion treasures.</p>
+
+        <p><strong>Industry Need:</strong></p>
+        <p>PRPicks fulfills a growing need in the fashion industry for access to genuine vintage and antique clothing. We cater to individuals who appreciate the artistry and craftsmanship of historical fashion pieces. Our platform bridges the gap between fashion history and modern style, offering a niche marketplace that celebrates the elegance of the past.</p>
+
+        <p><strong>User Roles:</strong></p>
+        <ul>
+            <li><strong>Admin:</strong> Administrators manage the PRPicks platform, overseeing product listings, user accounts, and ensuring the authenticity of antique items. They handle customer inquiries and maintain the website's integrity.</li>
+            <li><strong>Customer:</strong> Customers can explore, browse, and purchase antique clothing and accessories. They have user accounts to track their orders, save favorite items, and receive updates on new arrivals.</li>
+            <li><strong>Member:</strong> Registered members gain access to exclusive offers, early access to collections, and personalized recommendations based on their fashion preferences.</li>
+            <li><strong>Contributor:</strong> Contributors are vintage fashion experts who assist in the authentication and historical documentation of antique items. They enrich the platform with insights and knowledge about the pieces available on PRPicks.</li>
+        </ul>
+    </section>

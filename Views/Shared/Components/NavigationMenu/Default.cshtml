@@ -1,0 +1,25 @@
+@model List<PRList>
+
+
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img
+                src="https://i.pinimg.com/736x/eb/63/42/eb63428c369d5cdd886c980ddc55c81a.jpg" alt="image1"
+                height="40px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                @foreach (var PRList in Model)
+                {
+                    <li class="nav-item ">
+                        <a class="nav-link" asp-controller="@PRList.Controller"
+                            asp-action="@PRList.Action">@PRList.Label</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,135 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+:root {
+  --white: #FFFFFF;
+  --dark-yellow: #DAA520;
+  --dark-green: #006400;
+}
+
+input#Name {
+  color: black;
+}
+
+input#Description {
+  color: black;
+}
+
+input#DateCreated {
+  color: black;
+}
+
+input.btn.btn-primary {
+  margin-top: 5%;
+}
+
+input#Image {
+  color: black;
+}
+
+input#SKU {
+  color: black;
+}
+
+input#MSRP {
+  color: black;
+}
+
+input#Weight {
+  color: black;
+}
+
+input#DateAdded {
+  color: black;
+}
+
+select#CollectionId {
+  color: black;
+}
+body {
+  font-family: 'Merriweather', serif;
+  /* background-color: var(--white); */
+  color: var(--dark-green);
+}
+
+header {
+  font-family: 'Playfair Display', serif;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  color: black;
+}
+
+.navbar {
+  /* background-color: var(--white); */
+  border-color: var(--dark-yellow);
+}
+
+
+.navbar-brand {
+  color: var(--dark-yellow);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: blue;
+  border-bottom: 2px solid var(--dark-yellow);
+}
+
+footer {
+  /* background-color: var(--white); */
+  color: var(--dark-green);
+  font-family: 'Special Elite', cursive;
+}
+
+a {
+  color: rgb(218, 12, 12) !important;
+}
+
+a:hover {
+  color: var(--dark-green);
+  text-decoration: none;
+}
+
+.container {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
