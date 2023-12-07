@@ -1,7 +1,7 @@
 @model PRPicks.Models.Cart
 
 @{
-    ViewData["Title"] = "Cart";
+    ViewData["Title"] = "View my cart";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -26,11 +26,11 @@
                 @foreach (var cartItem in Model.CartItems)
                 {
                     <tr>
-                        <td>@cartItem.Product.Collection</td>
+                        <td>@cartItem.Product.Name</td>
                         <td>@cartItem.Quantity</td>
-                        <td>@cartItem.Product.CollectionId</td>
+                        <td>@cartItem.Product.MSRP</td>
                         <td>
-                            @((decimal)(cartItem.Quantity * cartItem.Product.CollectionId))
+                            @((decimal)(cartItem.Quantity * cartItem.Product.MSRP))
                         </td>
                     </tr>
 
@@ -41,7 +41,7 @@
                 <tr>
                     <td>Total</td>
                     <td colspan="3">@(Model.CartItems.Sum(cartItem => (decimal)(cartItem.Quantity *
-                    cartItem.Product.CollectionId)))</td>
+                    cartItem.Product.MSRP)))</td>
                 </tr>
             </tfoot>
         </table>

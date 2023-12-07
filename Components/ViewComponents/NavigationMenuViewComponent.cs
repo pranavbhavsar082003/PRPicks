@@ -12,7 +12,7 @@ namespace PRPicks.Components.ViewComponents
             new PRList { Controller = "Home", Action = "Index", Label = "Home" },
             new PRList { Controller = "Collections", Action = "Index", Label = "Collection" },
             new PRList { Controller = "Products", Action = "Index", Label = "Products" },
-            new PRList { Controller = "Carts", Action = "Index", Label = "View My Cart" },
+            new PRList { Controller = "Carts", Action = "Index", Label = "View my cart" },
             new PRList { Controller = "Home", Action = "", Label = "About" },
             new PRList { Controller = "Home", Action = "Brief", Label = "Brief" },
         };
