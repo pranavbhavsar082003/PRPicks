@@ -53,6 +53,19 @@ input#DateAdded {
 select#CollectionId {
   color: black;
 }
+
+input#Input_Email {
+  color: black;
+}
+
+input#Input_ConfirmPassword {
+  color: black;
+}
+
+input#Input_Password {
+  color: black;
+}
+
 body {
   font-family: 'Merriweather', serif;
   /* background-color: var(--white); */
@@ -95,6 +108,22 @@ tr {
 .navbar-nav .nav-link:hover {
   color: blue;
   border-bottom: 2px solid var(--dark-yellow);
+}
+
+a.nav-link.text-dark {
+  padding-top: 1px;
+}
+
+a {
+  margin-top: -1px;
+}
+
+a {
+  margin-right: 16px;
+}
+
+a {
+  text-decoration: none;
 }
 
 footer {
