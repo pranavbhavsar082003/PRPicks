@@ -1,6 +1,7 @@
 using System.Configuration;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using MySql.Data.MySqlClient;
 using PRPicks.Models;
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,11 @@ builder.Services.AddDefaultIdentity<IdentityUser>()
 
 
 builder.Services.AddTransient<DbInitializer>();
+
+builder.Services.AddAuthentication().AddGoogle(options => {
+    options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
+    options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
+});
 
 // Add sessions
 builder.Services.AddSession(options => {
