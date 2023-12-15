@@ -12,5 +12,7 @@ namespace PRPicks.Models
      // Change to be your model(s) and table(s)
      public DbSet<Collection> Collections { get; set; }
      public DbSet<Product> Products { get; set; }
+     public DbSet<Order> Orders { get; set; }
+     public DbSet<OrderItem> OrderItems { get; set; }
   }
 }
