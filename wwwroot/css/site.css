@@ -114,6 +114,10 @@ a.nav-link.text-dark {
   padding-top: 1px;
 }
 
+a.nav-link.text-dark {
+  padding: 9px;
+}
+
 a {
   margin-top: -1px;
 }
