@@ -35,6 +35,8 @@ builder.Services.AddSession(options => {
 
 builder.Services.AddScoped<CartService>();
 
+builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
+
 var app = builder.Build();
 app.UseSession();
 

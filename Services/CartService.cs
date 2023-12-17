@@ -1,5 +1,6 @@
 using PRPicks.Models;
 using Newtonsoft.Json;
+
 namespace PRPicks.Services
 {
     public class CartService
@@ -15,13 +16,22 @@ namespace PRPicks.Services
         public Cart? GetCart()
         {
             var cartJson = _httpContextAccessor.HttpContext.Session.GetString(_cartSessionKey);
+
             return cartJson == null ? new Cart() : JsonConvert.DeserializeObject<Cart>(cartJson);
         }
 
-        public void SaveCart(Cart cart)
+            public void SaveCart(Cart cart)
         {
-            var cartJson = JsonConvert.SerializeObject(cart);
-            _httpContextAccessor.HttpContext.Session.SetString(_cartSessionKey, cartJson);
+                 var cartJson = JsonConvert.SerializeObject(cart);
+
+            _httpContextAccessor.HttpContext.Session.SetString(_cartSessionKey, cartJson);        
         }
+
+        public void DestroyCart()
+        {
+            _httpContextAccessor.HttpContext.Session.Remove(_cartSessionKey);
+        }
+
     }
+
 }

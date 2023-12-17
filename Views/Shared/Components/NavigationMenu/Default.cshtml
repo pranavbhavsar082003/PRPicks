@@ -19,6 +19,12 @@
                             asp-action="@PRList.Action">@PRList.Label</a>
                     </li>
                 }
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="Orders" asp-action="Index">Orders</a>
+                    </li>
+                }
             </ul>
 
             <ul class="navbar-nav">
